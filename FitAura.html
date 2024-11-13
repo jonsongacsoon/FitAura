@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All-in-one fitness app with personalized workout plans, nutrition guidance, and AI-driven insights.">
+    <title>FitAura - Your Personalized Fitness Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Customizable Font */
+        :root {
+            --main-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: var(--main-font);
+        }
+
+        /* Body and container styles */
+        body {
+            color: #1b1b1b;
+            background-color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header styles */
+        header {
+            background: #000;
+            color: #ffffff;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #d1d1d1;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Button styles */
+        .btn-primary {
+            background-color: #1b1b1b;
+            color: #ffffff;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background 0.3s, color 0.3s;
+            border: 2px solid #ffffff;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Section styles */
+        .features, .cta, .signup {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .features h2, .cta h2, .signup h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1b1b1b;
+            margin-bottom: 20px;
+        }
+
+        /* Features section */
+        .features .feature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 280px;
+            margin: 20px;
+            padding: 40px;
+            border: 1px solid #e3e3e3;
+            border-radius: 20px;
+            background-color: #f9f9f9;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .features .feature img {
+            width: 70px;
+            margin-bottom: 20px;
+            filter: grayscale(100%);
+        }
+
+        .features .feature:hover {
+            transform: scale(1.05);
+        }
+
+        /* Flex container for features */
+        .feature-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        /* Call-to-Action section */
+        .cta {
+            background: #f3f3f3;
+            padding: 80px 20px;
+            border-top: 1px solid #e3e3e3;
+        }
+
+        /* Signup form styles */
+        .signup form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .signup input[type="email"] {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            text-align: center;
+            font-size: 1rem;
+            background: #ffffff;
+        }
+
+        .signup button {
+            padding: 15px;
+            background-color: #1b1b1b;
+            color: #ffffff;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .signup button:hover {
+            background-color: #333333;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #ffffff;
+            font-size: 0.85rem;
+            border-top: 1px solid #333;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>FitAura</h1>
+        <p>Your personalized path to fitness, bringing together workouts, nutrition, and the power of AI for a seamless experience.</p>
+        <a href="#signup" class="btn-primary">Get Early Access</a>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features container">
+        <h2>Features for You</h2>
+        <div class="feature-container">
+            <div class="feature">
+                <img src="https://img.icons8.com/ios-filled/100/000000/dumbbell.png" alt="Workout Plans Icon">
+                <h3>Personalized Workouts</h3>
+                <p>Exercise plans tailored to your goals, so you can focus on what matters to you.</p>
+            </div>
+            <div class="feature">
+                <img src="https://img.icons8.com/ios-filled/100/000000/artificial-intelligence.png" alt="AI Icon">
+                <h3>AI-Powered Insights</h3>
+                <p>Smart recommendations that grow with you, helping you get the best out of every session.</p>
+            </div>
+            <div class="feature">
+                <img src="https://img.icons8.com/ios-filled/100/000000/bell.png" alt="Reminders Icon">
+                <h3>Seamless Reminders</h3>
+                <p>Stay on track with gentle reminders that fit your schedule and lifestyle.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta container">
+        <h2>Join FitAura's Community</h2>
+        <p>Start your journey today with early access. FitAura is here to help you every step of the way.</p>
+        <a href="#signup" class="btn-primary">Sign Up Today</a>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup" class="signup container">
+        <h2>Early Access Signup</h2>
+        <form action="https://formsubmit.co/jonsongacsoon2010@gmail.com" method="POST">
+    <input type="email" placeholder="Enter your email address" required>
+    <button type="submit">Sign Up</button>
+</form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 FitAura. All rights reserved. Your journey, your pace, your FitAura.</p>
+    </footer>
+
+    <!-- JavaScript for Signup -->
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const email = event.target.querySelector("input[type='email']").value;
+            if (email) {
+                alert(`Thank you for signing up, ${email}!`);
+                event.target.reset();
+            } else {
+                alert("Please enter a valid email address.");
+            }
+        });
+    </script>
+</body>
+</html>
